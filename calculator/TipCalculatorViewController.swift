@@ -12,6 +12,7 @@ class TipCalculatorViewController: UIViewController {
 
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var tipPercentageLabel: UILabel!
+    
     @IBOutlet weak var tipPercentageSlider: UISlider!
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -41,6 +42,8 @@ class TipCalculatorViewController: UIViewController {
         calculateTip()
     }
     
-    
-
+    @IBAction func tipPercentagesSliderValueChanged(_ sender: Any) {
+        tipPercentageLabel.text! = String(format: "Tip: %02d%%", arguments: [Int(tipPercentageSlider.value * 100)])
+        calculateTip()
+    }
 }
