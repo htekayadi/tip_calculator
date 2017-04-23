@@ -18,30 +18,29 @@ class TipCalculatorViewController: UIViewController {
     @IBOutlet weak var numberOfPeopleLabel: UILabel!
     @IBOutlet weak var numberOfPeopleSlider: UISlider!
     
-    
-   
- 
-    
+    var tip = Tip(amountBeforeTax: 25.00, tipPercentage: 0.2)
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        amountTextField.text = String(format: "%0.2f", arguments: [tip.amountBeforeTax])
+        tipPercentageLabel.text = String(format: "Tip %d%%:", arguments: [Int(tip.tipPercentage * 100)])
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func calculateTip() {
+        tip.tipPercentage = Float(tipPercentageSlider.value)
+        tip.amountBeforeTax = ((amountTextField.text)! as NSString).floatValue
+        tip.calculateTip()
+        updateUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateUI() {
+        resultLabel.text = String(format: "Total: $%0.2f Tip: $%0.2f", arguments: [tip.totalAmount, tip.tipAmount])
     }
-    */
+
+    @IBAction func amountBeforeTaxTextFieldChanged(_ sender: Any) {
+        calculateTip()
+    }
+    
+    
 
 }
