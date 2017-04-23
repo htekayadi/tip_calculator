@@ -16,6 +16,7 @@
 		27231FA41EACBC5200186606 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27231FA31EACBC5200186606 /* calculatorUITests.swift */; };
 		27231FB21EACBC6800186606 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27231FB11EACBC6800186606 /* .gitignore */; };
 		27231FB41EACDD6C00186606 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27231FB31EACDD6C00186606 /* TipCalculatorViewController.swift */; };
+		27231FB71EACDF5B00186606 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27231FB61EACDF5B00186606 /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		27231FA51EACBC5200186606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27231FB11EACBC6800186606 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		27231FB31EACDD6C00186606 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
+		27231FB61EACDF5B00186606 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				27231F851EACBC5200186606 /* ViewController.swift */,
 				27231F871EACBC5200186606 /* Main.storyboard */,
 				27231FB51EACDD7100186606 /* controller */,
+				27231FB81EACDF6000186606 /* model */,
 				27231F8A1EACBC5200186606 /* Assets.xcassets */,
 				27231F8C1EACBC5200186606 /* LaunchScreen.storyboard */,
 				27231F8F1EACBC5200186606 /* Info.plist */,
@@ -137,6 +140,14 @@
 				27231FB31EACDD6C00186606 /* TipCalculatorViewController.swift */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		27231FB81EACDF6000186606 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				27231FB61EACDF5B00186606 /* Tip.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27231F861EACBC5200186606 /* ViewController.swift in Sources */,
+				27231FB71EACDF5B00186606 /* Tip.swift in Sources */,
 				27231FB41EACDD6C00186606 /* TipCalculatorViewController.swift in Sources */,
 				27231F841EACBC5200186606 /* AppDelegate.swift in Sources */,
 			);
