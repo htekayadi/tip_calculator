@@ -14,6 +14,7 @@
 		27231F8E1EACBC5200186606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27231F8C1EACBC5200186606 /* LaunchScreen.storyboard */; };
 		27231F991EACBC5200186606 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27231F981EACBC5200186606 /* calculatorTests.swift */; };
 		27231FA41EACBC5200186606 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27231FA31EACBC5200186606 /* calculatorUITests.swift */; };
+		27231FB21EACBC6800186606 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27231FB11EACBC6800186606 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		27231F9F1EACBC5200186606 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27231FA31EACBC5200186606 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		27231FA51EACBC5200186606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27231FB11EACBC6800186606 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		27231F771EACBC5200186606 = {
 			isa = PBXGroup;
 			children = (
+				27231FB11EACBC6800186606 /* .gitignore */,
 				27231F821EACBC5200186606 /* calculator */,
 				27231F971EACBC5200186606 /* calculatorTests */,
 				27231FA21EACBC5200186606 /* calculatorUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27231FB21EACBC6800186606 /* .gitignore in Resources */,
 				27231F8E1EACBC5200186606 /* LaunchScreen.storyboard in Resources */,
 				27231F8B1EACBC5200186606 /* Assets.xcassets in Resources */,
 				27231F891EACBC5200186606 /* Main.storyboard in Resources */,
